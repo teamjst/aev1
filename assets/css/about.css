@@ -1,0 +1,50 @@
+h1 {
+    font-family: 'Playfair Display';
+    color: black;
+    padding-left: 110px;
+    padding-right: 110px;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+    padding-top: 50px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#wrapper {
+    width: 350px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+form {
+
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+.button {
+    color: #17BCAE;
+    background: transparent;
+    border: 2px solid #17BCAE;
+    font-size: 17px;
+    font-family: 'Raleway';
+    letter-spacing: 4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-weight: 600;
+    min-width: 120px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:hover, .button:active {
+  color:#fff;
+  background:#17BCAE;
+}

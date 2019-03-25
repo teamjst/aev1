@@ -1,11 +1,42 @@
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <title>About</title>
+    <meta charset="utf-8">
+    <title>About Flask</title>
+        <link rel="stylesheet" href="{% static '/css/about.css' %}">
+        <link rel="stylesheet" href="{% static '/css/slick.css' %}">
+        <link rel="stylesheet" href="{% static '/css/slick-theme.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     </head>
     <body>
-        <h1>About us</h1>
-        <p>We like Aura Essence</p>
+
+        <h1>Discover What You Can Do</h1>
+
+        <div class="items" id="wrapper">
+            <div><img src="{% static '/images/img1.png' %}" alt="slider image"/></div>
+            <div><img src="{% static '/images/img2.png' %}" alt="slider image"/></div>
+            <div><img src="{% static '/images/img3.png' %}" alt="slider image"/></div>
+            <div><img src="{% static '/images/img4.png' %}" alt="slider image"/></div>
+        </div>
+        <br>
+        <br>
+        <form method="get" action="login.html"><a href="login" class="button">GET STARTED</a></form>
+
+        <script src="{% static '/js/jquery-3.1.0.js' %}" type="text/javascript"></script>
+        <script src="{% static '/js/slick.js' %}" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.items').slick({
+                    dots: true,
+                    arrows: true,
+                    autoplay: false
+                });
+            });
+        </script>
+
     </body>
 </html>
