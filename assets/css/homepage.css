@@ -1,0 +1,56 @@
+h1 {
+    font-family: 'Lato';
+    color: white;
+    padding-left: 110px;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+    font-size: 90px;
+    font-weight: 250;
+}
+
+html {
+    height: 100%;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background: #007991;  /* fallback for old browsers */
+    background-repeat: no-repeat;
+    background: -webkit-linear-gradient(#78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+form {
+
+    padding-left: 110px;
+}
+
+
+.button {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    font-size: 17px;
+    font-family: 'Lato';
+    letter-spacing: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-weight: 300;
+    min-width: 120px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:hover, .button:active {
+  color:#fff;
+  background:rgba(0, 0, 0, 0.2);
+}
+
+
+#logo {
+    padding-top: 100px;
+    padding-left: 100px;
+    width: 230px;
+}

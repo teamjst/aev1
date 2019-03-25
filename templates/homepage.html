@@ -1,11 +1,17 @@
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <title>Homepage</title>
+    <meta charset="utf-8">
+    <title>JST | AURA ESSENCE</title>
+        <link rel="stylesheet" href="{% static '/css/homepage.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
     </head>
     <body>
-        <h1>This is the homepage</h1>
-        <p>Welcome to Aura Essence</p>
+        <img src="{% static '/images/Design.png' width=100 %}" id="logo"/>
+    <h1>hello <br> there!</h1>
+        <form method="get" action="about.html"><a href="about" class="button">Begin Tour</a></form>
     </body>
 </html>
