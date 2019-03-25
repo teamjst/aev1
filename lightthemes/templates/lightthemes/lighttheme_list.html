@@ -1,10 +1,46 @@
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <title>Light Themes</title>
+    <meta charset="utf-8">
+    <title>JST | AURA ESSENCE</title>
+        <link rel="stylesheet" href="{% static 'lightsetting.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'slick.css' %}">
+        <link rel="stylesheet" href="{% static 'slick-theme.css' %}">
+
     </head>
     <body>
-        <h1>Light Theme List</h1>
+
+        <div class="header">
+            <div class="nav">
+                <ul class="menu-bar">
+                    <li><a href="userhome"><i class="fa fa-chevron-left"></i></a></li>
+                    <li><h1>Light Theme</h1></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="items" id="wrapper">
+            <div><a href="http://google.com"><img src="{% static 'sun3.png' %}" alt="slider image" class="fix"/></a></div>
+            <div><a href="http://google.com"><img src="{% static 'rain2.png' %}" alt="slider image" alt="slider image" class="fix"/></a></div>
+            <div><a href="http://google.com"><img src="{% static 'fire2.png' %}" alt="slider image" alt="slider image" class="fix"/></a></div>
+        </div>
+        <script src="{% static '/js/jquery-3.1.0.js' %}" alt="slider image" type="text/javascript"></script>
+        <script src="{% static '/js/slick.js' %}" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.items').slick({
+                    dots: true,
+                    arrows: true,
+                    autoplay: false
+                });
+            });
+        </script>
+
     </body>
 </html>
