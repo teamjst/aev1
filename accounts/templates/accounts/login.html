@@ -1,0 +1,25 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    <meta charset="utf-8">
+    <title>JST | AURA ESSENCE</title>
+        <link rel="stylesheet" href="{% static '/css/login.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+    </head>
+    <body>
+        <img src="{% static '/images/Design.png' width=100 %}" id="logo"/>
+    <div class="form-area">
+        <h3>SIGN IN</h3>
+        <form action="{% url 'accounts:login' %}" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="LOGIN">
+            <a href="signup">New User? Sign Up!</a>
+        </form>
+    </div>
+
+    </body>
+</html>
