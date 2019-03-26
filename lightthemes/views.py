@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from yeelight import Bulb
 from yeelight import *
 
@@ -24,4 +24,4 @@ def fire_theme(request):
 
     bulb.start_flow(flow)
 
-    return render(request, 'lightthemes/lighttheme_list.html')
+    return redirect('lightthemes:lighthome')
