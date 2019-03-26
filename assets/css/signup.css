@@ -1,0 +1,122 @@
+html {
+    height: 100%;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background: #007991;  /* fallback for old browsers */
+    background-repeat: no-repeat;
+    background: -webkit-linear-gradient(#78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    font-family: 'Lato';
+    color: white;
+    padding-left: 110px;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+    font-size: 80px;
+    font-weight: 250;
+}
+
+
+#logo {
+    padding-top: 50px;
+    width: 170px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-area{
+    position: absolute;
+    top: 520px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Raleway';
+    font-weight: 300;
+    color: white;
+    width: 370px;
+    padding: 40px;
+}
+
+h3 {
+    font-family: 'Lato';
+    margin: 0;
+    padding: 0 0 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+.column{
+    float: left;
+    width: 50%;
+}
+
+.form-area p{
+    font-family: 'Lato';
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    color: white;
+}
+
+.form-area input, select{
+    margin-bottom: 20px;
+    width:100%;
+}
+
+.form-area input[type=text],
+.form-area input[type=password]{
+    font-family: 'Lato';
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color:white;
+    display: 16px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.form-area input[type=submit]{
+    font-family: 'Raleway';
+    border: none;
+    height: 40px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    background: transparent;
+    border: 1px solid white;
+    letter-spacing: 4px;
+    cursor: pointer;
+
+}
+
+.form-area button[type=submit]:hover,
+.form-area button[type=submit]:active
+{
+    background:rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.form-area a{
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.form-area a:hover{
+    color: blueviolet;
+}

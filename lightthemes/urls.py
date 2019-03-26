@@ -16,7 +16,9 @@ Including another URLconf
 from django.urls import path, re_path
 from . import views
 
+app_name = 'lightthemes'
+
 urlpatterns = [
     path('', views.lighttheme_list),
-    path('fire_theme', views.fire_theme, name = "firetheme" ),
+    path('fire_theme', views.fire_theme, name="firetheme" ),
 ]

@@ -1,0 +1,108 @@
+h1 {
+    font-family: 'Josefin Sans';
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 85px;
+    font-weight: 200;
+}
+
+.fa-chevron-left::before {
+    font-size: 64px;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+.fa-chevron-left:hover{
+    color: blueviolet;
+    -webkit-text-stroke: 2px blueviolet;
+}
+
+.fa-plus-circle::before{
+    font-size: 64px;
+    -webkit-text-stroke: 2px white;
+    color:transparent;
+}
+
+.header{
+    margin-left: -10px;
+    margin-top: -16px;
+    margin-right: -8px;
+}
+
+
+.nav .menu-bar {
+    text-align: center;
+}
+
+.menu-bar li {
+    list-style-type: none;
+    display: inline-block;
+    margin: -15px 130px;
+    font-size: 25px;
+    font-family: 'Lato';
+    color: white;
+    margin-left: -30px;
+    margin-top: 50px;
+}
+
+
+html {
+    height: 100%;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background: #007991;  /* fallback for old browsers */
+    background-repeat: no-repeat;
+    background: -webkit-linear-gradient(#78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.2);
+}
+
+#light {
+    width: 70px;
+}
+
+p {
+    margin-top: -157px;
+}
+
+.content{
+    margin: 10px auto 0px auto;
+    text-align: center;
+    width: 750px;
+    position: relative;
+    top: 15px;
+    margin-left: auto;
+}
+
+.square-button {
+    background: transparent;
+    outline-style: double;
+    outline-color: white;
+    outline-width: 10px;
+    color: white;
+    display: inline-block;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    padding: 25px;
+    font-weight: bold;
+    height: 200px;
+    letter-spacing: 3px;
+    line-height: 205px;
+    margin-bottom: 35px;
+    margin-left: 35px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 230px;
+
+}
+
+.square-button:hover{
+    background:rgba(0, 0, 0, 0.4);
+}
+
+a {
+    text-decoration: none;
+}
