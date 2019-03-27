@@ -19,6 +19,6 @@ from . import views
 app_name = 'lightthemes'
 
 urlpatterns = [
-    path('', views.lighttheme_list),
-    path('fire_theme', views.fire_theme, name="firetheme" ),
+    path('', views.lighttheme_list, name="lighthome"),
+    path('firetheme', views.fire_theme, name="firetheme" ),
 ]
