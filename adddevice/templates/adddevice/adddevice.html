@@ -1,0 +1,71 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    <meta charset="utf-8">
+    <title>JST | AURA ESSENCE</title>
+        <link rel="stylesheet" href="{% static '/css/device.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="nav">
+                <ul class="menu-bar">
+                    <li><a href="/accounts/userhome"><i class="fa fa-chevron-left"></i></a></li>
+                    <li><h1>Add Device</h1></li>
+                </ul>
+            </div>
+        </div>
+  <div class="sectionC slide-fade demo-container">
+      <button id="add">Locate Device</button>
+      <h1 class="customH">Existing Devices</h1>
+  <ul id="list">
+    <li class="show">Device</li>
+  </ul>
+
+
+        </div>
+
+    <!--- Referred to this codepen
+    So the following is not of my own thinking:
+
+    https://codepen.io/kaolay/pen/ZBvrQa
+
+-->
+        <script type="text/javascript">
+            var randomColours = ['rgba(0, 0, 0, 0.2)'];
+var currentColour = 0;
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById("add").addEventListener("click", function(){
+    var li = document.createElement("li");
+    li.innerText = "Device";
+    var colour = randomColours[currentColour];
+    if (currentColour == randomColours.length - 1) {
+      currentColour = 0;
+    } else {
+      currentColour++;
+    }
+    li.style.backgroundColor = '#' + colour;
+    document.getElementById("list").appendChild(li);
+    setTimeout(function() {
+      li.classList.add('show');
+    }, 10);
+    li.addEventListener("click", function(ev){
+      this.classList.remove('show');
+      setTimeout(function() {
+        this.parentNode.removeChild(this);
+      }, 500);
+    });
+  });
+});
+        </script>
+
+
+    </body>
+</html>

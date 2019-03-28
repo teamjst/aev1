@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'accounts',
     'timer',
     'sound',
+    'adddevice',
 ]
 
 MIDDLEWARE = [

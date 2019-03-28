@@ -27,6 +27,7 @@ urlpatterns = [
     re_path(r'^lightthemes/', include('lightthemes.urls')),
     re_path(r'^timer/', include('timer.urls')),
     re_path(r'^sound/', include('sound.urls')),
+    re_path(r'^adddevice/', include('adddevice.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
