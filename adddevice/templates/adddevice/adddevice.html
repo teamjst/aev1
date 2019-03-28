@@ -48,33 +48,33 @@ So the following is not of my own thinking:
 https://codepen.io/kaolay/pen/ZBvrQa
 
 -->
-{#        <script type="text/javascript">#}
-{#            var randomColours = ['rgba(0, 0, 0, 0.2)'];#}
-{#var currentColour = 0;#}
-{#document.addEventListener('DOMContentLoaded', function () {#}
-{#  document.getElementById("add").addEventListener("click", function(){#}
-{#    var li = document.createElement("li");#}
-{#    li.innerText = "Device";#}
-{#    var colour = randomColours[currentColour];#}
-{#    if (currentColour == randomColours.length - 1) {#}
-{#      currentColour = 0;#}
-{#    } else {#}
-{#      currentColour++;#}
-{#    }#}
-{#    li.style.backgroundColor = '#' + colour;#}
-{#    document.getElementById("list").appendChild(li);#}
-{#    setTimeout(function() {#}
-{#      li.classList.add('show');#}
-{#    }, 10);#}
-{#    li.addEventListener("click", function(ev){#}
-{#      this.classList.remove('show');#}
-{#      setTimeout(function() {#}
-{#        this.parentNode.removeChild(this);#}
-{#      }, 500);#}
-{#    });#}
-{#  });#}
-{#  });#}
-{#        </script>#}
+        <script type="text/javascript">
+            var randomColours = ['rgba(0, 0, 0, 0.2)'];
+var currentColour = 0;
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById("add").addEventListener("click", function(){
+    var li = document.createElement("li");
+    li.innerText = "Device";
+    var colour = randomColours[currentColour];
+    if (currentColour == randomColours.length - 1) {
+      currentColour = 0;
+    } else {
+      currentColour++;
+    }
+    li.style.backgroundColor = '#' + colour;
+    document.getElementById("list").appendChild(li);
+    setTimeout(function() {
+      li.classList.add('show');
+    }, 10);
+    li.addEventListener("click", function(ev){
+      this.classList.remove('show');
+      setTimeout(function() {
+        this.parentNode.removeChild(this);
+      }, 500);
+    });
+  });
+  });
+        </script>
 
 
 </body>
