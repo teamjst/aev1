@@ -1,0 +1,59 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    <meta charset="utf-8" name="viewport">
+    <title>JST | AURA ESSENCE</title>
+        <link rel="stylesheet" href="{% static '/css/sound.css' %}">
+        <link rel="stylesheet" href="{% static '/css/fontello.css' %}">
+        <link rel="stylesheet" href="{% static '/css/fontello-codes.css' %}">
+        <link rel="stylesheet" href="{% static '/css/fontello-embedded.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="nav">
+                <ul class="menu-bar">
+                    <li><a href="/accounts/userhome"><i class="fa fa-chevron-left"></i></a></li>
+                    <li><h1>Sound Setting</h1></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="form-area" >
+        <h3>Sound Select: &nbsp </h3>
+        <form action="" method="get">
+            <select name="" id="">
+                <option value="">
+                Birds Chirping
+                </option>
+                <option value="">
+                Wind Blowing
+                </option>
+                <option value="">
+                Rain Drops
+                </option>
+                <option value="">
+                Fire Crackling
+                </option>
+            </select>
+        </form>
+    </div>
+        <div class="sectionB">
+        <h3>Volume: &nbsp </h3>
+            <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+        </div>
+
+
+    </body>
+</html>

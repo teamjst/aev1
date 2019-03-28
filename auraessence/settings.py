@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'lightthemes',
     'accounts',
     'timer',
+    'sound',
 ]
 
 MIDDLEWARE = [
