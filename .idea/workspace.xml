@@ -9,11 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f9c27f6-bcce-42d2-82bd-c412cf6e237d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/adddevice/templates/adddevice/adddevice.html" beforeDir="false" afterPath="$PROJECT_DIR$/adddevice/templates/adddevice/adddevice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adddevice/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/adddevice/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-    </list>
+    <list default="true" id="0f9c27f6-bcce-42d2-82bd-c412cf6e237d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,29 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="das://909fe302-a780-4527-89b8-8bdbeb6a91c5/schema/main/table/adddevice_settings">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://909fe302-a780-4527-89b8-8bdbeb6a91c5/schema/main/table/adddevice_settings.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/909fe302-a780-4527-89b8-8bdbeb6a91c5/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -253,7 +231,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34419000" />
+    <option name="totallyTimeSpent" value="34747000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="959" y="0" width="968" height="1047" extended-state="0" />
@@ -262,19 +249,19 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26762116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" show_stripe_button="false" weight="0.32932165" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32932165" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32932165" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32932165" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33260393" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33260393" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32932165" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -421,13 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://909fe302-a780-4527-89b8-8bdbeb6a91c5/schema/main/table/adddevice_settings">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://909fe302-a780-4527-89b8-8bdbeb6a91c5/schema/main/table/adddevice_settings.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -438,7 +418,14 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/909fe302-a780-4527-89b8-8bdbeb6a91c5/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+          <caret selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://909fe302-a780-4527-89b8-8bdbeb6a91c5/schema/main/table/adddevice_settings">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
