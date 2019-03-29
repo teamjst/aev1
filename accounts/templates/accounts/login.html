@@ -10,13 +10,13 @@
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
     </head>
     <body>
-        <img src="{% static '/images/Design.png' width=100 %}" id="logo"/>
+        <img alt="" src="{% static '/images/Design.png'  %}" width=100 id="logo"/>
     <div class="form-area">
         <h3>SIGN IN</h3>
         <form action="{% url 'accounts:login' %}" method="post">
             {% csrf_token %}
             {{ form }}
-            <input type="submit" value="LOGIN">
+            <input type="submit" value="LOGIN" name="login">
             <a href="signup">New User? Sign Up!</a>
         </form>
     </div>

@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Settings(models.Model):
-    uName = models.CharField(max_length=25)
+    username = models.CharField(max_length=25)
     brightness = models.IntegerField(default=100)
     ColorTemp = models.IntegerField(default=2700)
     hue = models.IntegerField(default=359)
