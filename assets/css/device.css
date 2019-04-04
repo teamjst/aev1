@@ -158,6 +158,20 @@ button:hover, button:active {
     padding: 10px;
 }
 
+::placeholder{
+    color: white;
+}
+
+#bulbthingie {
+    font-family: 'Josefin Sans';
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    padding: 10px;
+    font-size: 15px;
+    width: 230px;
+}
+
 
 .customH {
     font-family: 'Josefin Sans';
@@ -172,3 +186,25 @@ button:hover, button:active {
     border-bottom: 1px solid white;
     border-bottom-width: 1px;
 }
+
+#add {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+    letter-spacing: 2.5px;
+    padding: 10px;
+    font-weight: bold;
+    min-width: 210px;
+    display: inline-block;
+    margin-left: 0px;
+    text-decoration: none;
+}
+
+#add:hover, #add:active {
+  color:#fff;
+    cursor: pointer;
+  background:rgba(0, 0, 0, 0.2);
+}
+

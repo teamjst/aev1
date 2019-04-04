@@ -75,8 +75,8 @@ p {
 
 
 #wrapper {
-    width: 450px;
-    margin: 0 auto;
+    width: 490px;
+    margin: -40px auto;
 }
 
 img {
@@ -103,4 +103,9 @@ img {
 
 .slick-dots li button:before {
     color: white !important;
+}
+
+
+.slick-dots ul {
+    bottom: 0px;
 }
