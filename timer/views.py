@@ -2,12 +2,10 @@ from django.shortcuts import render
 from adddevice.models import Settings
 from yeelight import Bulb
 import datetime
-import threading
-
 
 # Create your views here.
 def timer_view(request):
-    userbulb = Settings.objects.filter(username__exact=request.user)
+    userbulb = Settings.objects.filter(username__exact=request.user.username)
     startpause = False
     bulb = Bulb(userbulb[0].ip)
     if request.GET.get('timerstart'):
