@@ -10,7 +10,7 @@ import queue
 def adddevice_view(request):
     bulbqueue = queue.Queue()
     ip = request.GET.get('ip')
-    bulb = Settings.objects.filter(username__exact=request.user)
+    bulb = Settings.objects.filter(username__exact=request.user).first()    # Get queryset
     queryset = Settings.objects.all()
     context = {
         "bulb_list": queryset
