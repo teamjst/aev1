@@ -10,7 +10,6 @@ import queue
 def adddevice_view(request):
     bulbqueue = queue.Queue()
     ip = request.GET.get('ip')
-    bulb = Settings.objects.filter(username__exact=request.user).first()    # Get queryset
     queryset = Settings.objects.all()
     context = {
         "bulb_list": queryset
@@ -22,10 +21,48 @@ def adddevice_view(request):
     discoverthread.start()
     discoverthread.join()
     bulbs = bulbqueue.get()
-    if request.GET.get('connect'):
-        if bulb != ip:
-            for x in bulbs:
-                if x['ip'] == ip:
-                    bulb.ip = ip
-                    bulb.save()
+
+    # If user is found
+    if Settings.objects.filter(username__exact=request.user.username):
+        # Set bulb to be an object found in settings db
+        bulb = Settings.objects.filter(username__exact=request.user.username)
+        # Update ip if valid
+        if request.GET.get('connect'):
+            if bulb != ip:
+                for x in bulbs:
+                    if x['ip'] == ip:
+                        bulb.ip = ip
+                        bulb.update()
+    # If no user is found (new user)
+    else:
+        # Create new object to save to db
+        bulb = Settings()
+        # Save if ip matches the
+        if request.GET.get('connect'):
+            if bulb != ip:
+                for x in bulbs:
+                    if x['ip'] == ip:
+                        bulb.ip = ip
+                        bulb.username = request.user.username
+                        bulb.save()
+
+    # user found
+    # if Settings.objects.filter(username__exact=request.user):
+    #     bulb = Settings.objects.filter(username__exact=request.user).first()
+    #     if request.GET.get('connect'):
+    #         if bulb != ip:
+    #             for x in bulbs:
+    #                 if x['ip'] == ip:
+    #                     bulb.ip = ip
+    #                     bulb.update()
+    # # new user
+    # else:
+    #     bulb = Settings.objects.create(name=request.user.username)
+    #     if request.GET.get('connect'):
+    #         if bulb != ip:
+    #             for x in bulbs:
+    #                 if x['ip'] == ip:
+    #                     bulb.ip = ip
+    #                     bulb.update()
+
     return render(request, 'adddevice/adddevice.html', context)
